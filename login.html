@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Minus Exchange</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Minus Exchange</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="markets.html" id="markets-nav"><span>markets</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="login.html" id="login-logout">login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page pricing-table-page">
+        <section class="clean-block clean-pricing dark" style="background-color:rgb(255,255,255);">
+            <div class="container">
+                <div class="block-heading">
+                    <div class="alert alert-success" role="alert" id="signup-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Signup successful. Please check your email for further instructions.</span></div>
+                    <div class="alert alert-danger"
+                        role="alert" id="login-fail"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Login failure. Please check your input.</span></div>
+                    <div class="alert alert-danger" role="alert" id="signup-fail"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Signup failure. Please check your input.&nbsp;<br>&nbsp;Is your email registered before?<br></span></div>
+                    <div
+                        class="alert alert-success" role="alert" id="logout-success"><span>Logout Successful. Use the form below to login again.</span></div>
+                <h2 class="text-info" id="index-heading">Start trading today</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-md-8">
+                    <div>
+                        <ul class="nav nav-tabs nav-fill">
+                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-3">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-4">Register</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="tab-3">
+                                <form>
+                                    <div class="form-group"><label>Email</label><input class="form-control" type="email" id="emailid"></div>
+                                    <div class="form-group"><label>Password</label><input class="form-control" type="password" id="password"></div><button class="btn btn-primary btn-block" type="button" id="submit-login">Submit</button></form>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-4">
+                                <form>
+                                    <div class="form-group"><label>Email</label><input class="form-control" type="email" id="emailid2"></div>
+                                    <div class="form-group"><label>Password</label><input class="form-control" type="password" id="password2"></div>
+                                    <div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" id="confpass"></div>
+                                    <div class="form-group"><label>Name according to your National ID or Passport&nbsp;</label><input class="form-control" type="text" id="name"></div><button class="btn btn-primary btn-block" type="button" id="submit-signup">Submit</button></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark" style="color:rgb(48,68,88);background-color:rgb(255,255,255);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" style="color:rgb(0,0,0);">
+                    <h5 style="color:rgb(0,0,0);">Getting Started</h5>
+                    <ul>
+                        <li>User Guide</li>
+                        <li>API<a href="#" style="color:rgb(0,0,0);"></a></li>
+                        <li>Tariff</li>
+                    </ul>
+                    <ul></ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5 style="color:rgb(0,0,0);">Legal</h5>
+                    <ul>
+                        <li><a href="#" style="color:rgb(0,0,0);">Company Information</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">Terms of Service</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5 style="color:rgb(0,0,0);">Contact us</h5>
+                    <ul>
+                        <li><a href="#" style="color:rgb(0,0,0);">Online Chat</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">Business opportunities</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Minus Exchange</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
