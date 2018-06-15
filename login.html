@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="ldiv" class="loadingdiv"><img src="assets/img/loading.gif" class="loadingdivimg"></div>
+    <div id="ldivlogin" class="loadingdiv"><img src="assets/img/loading.gif" class="loadingdivimg"></div>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><a class="navbar-brand logo" href="#">Minus Exchange</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
@@ -40,20 +40,20 @@
                     <div>
                         <ul class="nav nav-tabs nav-fill">
                             <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Login</a></li>
-                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-4">Register</a></li>
+                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-4" id="register">Register</a></li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane" role="tabpanel" id="tab-3">
                                 <form>
-                                    <div class="form-group"><label>Email</label><input class="form-control" type="email" id="emailid"></div>
-                                    <div class="form-group"><label>Password</label><input class="form-control" type="password" id="password"></div><button class="btn btn-primary btn-block" type="button" id="submit-login">Submit</button></form>
+                                    <div class="form-group"><label id="email">Email</label><input class="form-control" type="email" id="emailid"></div>
+                                    <div class="form-group"><label id="pw">Password</label><input class="form-control" type="password" id="password"></div><button class="btn btn-primary btn-block" type="button" id="submit-login">Submit</button></form>
                             </div>
                             <div class="tab-pane active" role="tabpanel" id="tab-4">
                                 <form>
                                     <div class="form-group"><label>Email</label><input class="form-control" type="email" id="emailid2"></div>
                                     <div class="form-group"><label>Password</label><input class="form-control" type="password" id="password2"></div>
-                                    <div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" id="confpass"></div>
-                                    <div class="form-group"><label>Name according to your National ID or Passport&nbsp;</label><input class="form-control" type="text" id="name"></div>
+                                    <div class="form-group"><label id="cpw">Confirm Password</label><input class="form-control" type="password" id="confpass"></div>
+                                    <div class="form-group"><label id="nameID">Name according to your National ID or Passport&nbsp;</label><input class="form-control" type="text" id="name"></div>
                                     <p>By clicking 'Submit' below, you agree to our Terms of Service and Privacy Policy.</p><button class="btn btn-primary btn-block" type="button" id="submit-signup">Submit</button></form>
                             </div>
                         </div>
