@@ -13,26 +13,32 @@
 <body style="background-color:rgb(255,255,255);">
     <main class="page landing-page">
         <div class="d-flex flex-column justify-content-center align-items-center align-content-center" id="particles-js" style="background-color:#000000;">
-            <div class="clean-block.clean-hero text" style="z-index:1">
+            <div class="justify-content-center align-items-center align-content-center mx-auto clean-block.clean-hero text" style="z-index:1">
                 <h2 id="index-heading" style="color:rgb(255,255,255);margin:0px 0px 30px;">Minus Exchange</h2>
-                <p class="text-center" style="color:rgb(255,255,255);margin:0px 0px 30px;">Trade simple, minus fees</p>
-                <div class="btn-group" role="group" id="login-buttons"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0);" href="login.html"><a class="text-body" href="login.html" style="margin:8px;">Login</a></button><button class="btn btn-primary" type="button"
-                        style="background-color:rgb(8,22,37);"><a class="text-white" href="markets.html">Markets</a></button><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0);" href="login.html"><a class="text-body" href="login.html">Register</a></button></div>
-                <p
-                    class="text-center" style="margin:16px ;"><a href="#MET" style="color:rgb(255,255,255);">What about MET?</a></p>
+                <p class="text-center" id="slogan" style="color:rgb(255,255,255);margin:0px 0px 30px;">Trade simple, minus fees</p>
+                <div class="btn-group d-flex justify-content-center align-items-center align-content-center" role="group" id="login-buttons"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0);" href="login.html"><a class="text-body" href="login.html" id="loginb" style="margin:0px;">Login</a></button><button class="btn btn-primary"
+                        type="button" style="background-color:rgb(8,22,37);"><a class="text-white" href="markets/ETHBTC.html" id="markets">Markets</a></button><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0);"
+                        href="login.html"><a class="text-body" href="login.html" id="register">Register</a></button></div>
+                <p class="text-center" style="margin:16px ;"><a href="#MET" id="airdrop" style="color:rgb(255,255,255);">What about MET?</a></p>
             </div>
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center align-content-center bigbox" style="background-color:#ffffff;">
             <div style="z-index:1">
-                <h2 style="color:rgb(0,0,0);margin:0px 0px 30px;">Minus Exchange focuses on UX.</h2>
-                <p style="color:rgb(0,0,0);margin:0px 0px 30px;">UX stands for User Experience: No bullshit, no jargons, which gives you the best trading experience.</p>
+                <div class="container">
+                    <h2 style="color:rgb(0,0,0);margin:0px 0px 30px;">Minus Exchange focuses on UX.</h2>
+                    <p style="color:rgb(0,0,0);margin:0px 0px 30px;">UX stands for User Experience: No bullshit, no jargons, which gives you the best trading experience.</p>
+                </div>
             </div>
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center align-content-center bigbox" id="MET" style="background-color:#ffffff;">
             <div class="clean-block.clean-hero text" style="z-index:1">
-                <h2 class="text-right" style="color:rgb(0,0,0);margin:0px 0px 30px;">What about MET?</h2>
-                <p class="text-right" style="color:rgb(0,0,0);margin:0px 0px 30px;">Thanks for visiting us after receiving your airdrop of MET (Minus Exchange Tokens)!<br></p>
-                <p class="text-right">//TODO</p>
+                <div class="container">
+                    <h2 class="text-right" style="color:rgb(0,0,0);margin:0px 0px 30px;">What about MET?</h2>
+                    <p class="text-right" style="color:rgb(0,0,0);margin:0px 0px 30px;">Thanks for visiting us after receiving your airdrop of MET (Minus Exchange Tokens)!<br></p>
+                    <p class="text-right">MET is your trading or deposit reward. Receive 100 MET everyday for trading actively#, or keeping a deposit of over &nbsp; 3 ETH* in your account.&nbsp;</p>
+                    <p class="text-left" style="font-size:10px;"># Your trading volume should be over 5 ETH (or equivalent).</p>
+                    <p class="text-left" style="font-size:10px;">* or equivalent value of other currencies.</p>
+                </div>
             </div>
         </div>
     </main>
@@ -40,33 +46,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3" style="color:rgb(0,0,0);">
-                    <h5 style="color:rgb(0,0,0);">Getting Started</h5>
+                    <h5 id="gstarted" style="color:rgb(0,0,0);">Getting Started</h5>
                     <ul>
-                        <li>User Guide</li>
+                        <li id="uguide">User Guide</li>
                         <li>API<a href="#" style="color:rgb(0,0,0);"></a></li>
-                        <li>Tariff</li>
+                        <li id="tariff">Tariff</li>
                     </ul>
                     <ul></ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5 style="color:rgb(0,0,0);">Legal</h5>
+                    <h5 id="legal" style="color:rgb(0,0,0);">Legal</h5>
                     <ul>
-                        <li><a href="#" style="color:rgb(0,0,0);">Privacy Policy</a></li>
-                        <li><a href="#" style="color:rgb(0,0,0);">Terms of Service</a></li>
-                        <li><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
+                        <li><a href="#" id="pp" style="color:rgb(0,0,0);">Privacy Policy</a></li>
+                        <li><a href="#" id="tos" style="color:rgb(0,0,0);">Terms of Service</a></li>
+                        <li id="fsafe"><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5 style="color:rgb(0,0,0);">Contact us</h5>
+                    <h5 id="contact" style="color:rgb(0,0,0);">Contact us</h5>
                     <ul>
                         <li><a href="#" style="color:rgb(0,0,0);">Telegram</a></li>
-                        <li><a href="#" style="color:rgb(0,0,0);">Business opportunities</a></li>
+                        <li><a href="#" id="bo" style="color:rgb(0,0,0);">Business opportunities</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5 style="color:rgb(0,0,0);">&nbsp;&nbsp;</h5>
                     <ul>
                         <li><a href="#" style="color:rgb(0,0,0);">中文</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">English</a></li>
                         <li><a href="#" style="color:rgb(0,0,0);">한글</a></li>
                     </ul>
                 </div>

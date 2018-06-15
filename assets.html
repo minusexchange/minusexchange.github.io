@@ -11,15 +11,13 @@
 </head>
 
 <body>
-    <div id="loading">
-        <div id="ldiv" class="loadingdiv"><img src="assets/img/loading.gif" class="loadingdivimg"></div>
-    </div>
+    <div id="loading"></div>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><a class="navbar-brand logo" href="index.html">Minus Exchange</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="ETHBTC.html">markets</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="markets/ETHBTC.html">markets</a></li>
                     <li class="nav-item" role="presentation" id="assets-nav"><a class="nav-link active" href="assets.html" id="assets-nav">assets</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="settings.html" id="settings-nav">settings</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="login-logout">{login/logout}</a></li>
@@ -31,11 +29,12 @@
         <section class="clean-block features">
             <div class="container">
                 <div class="block-heading" style="padding:50px 0px 0px;color:rgb(59.153.224);">
-                    <h1 class="text-left">Howdy,&nbsp;<span id="user-name">{name}</span></h1>
+                    <h1 class="text-left"><span id="howdy">Howdy</span>,&nbsp;<span id="user-name">{name}</span></h1>
                     <div class="row" style="margin:-0;padding:10px;">
                         <div class="col">
                             <h2 id="NPV-heading">NPV</h2>
-                            <h1>{amount}</h1><em>+ 17% today</em></div>
+                            <h1>{amount}</h1>
+                        </div>
                     </div>
                     <div class="row" style="padding:15px;">
                         <div class="col">
@@ -43,9 +42,9 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Currency</th>
-                                            <th>Amount</th>
-                                            <th>Action</th>
+                                            <th id="currencyt">Currency</th>
+                                            <th id="amountt">Amount</th>
+                                            <th id="actiont">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody id="assets-table"></tbody>
@@ -62,33 +61,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3" style="color:rgb(0,0,0);">
-                    <h5 style="color:rgb(0,0,0);">Getting Started</h5>
+                    <h5 id="gstarted" style="color:rgb(0,0,0);">Getting Started</h5>
                     <ul>
-                        <li>User Guide</li>
+                        <li id="uguide">User Guide</li>
                         <li>API<a href="#" style="color:rgb(0,0,0);"></a></li>
-                        <li>Tariff</li>
+                        <li id="tariff">Tariff</li>
                     </ul>
                     <ul></ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5 style="color:rgb(0,0,0);">Legal</h5>
+                    <h5 id="legal" style="color:rgb(0,0,0);">Legal</h5>
                     <ul>
-                        <li><a href="#" style="color:rgb(0,0,0);">Privacy Policy</a></li>
-                        <li><a href="#" style="color:rgb(0,0,0);">Terms of Service</a></li>
-                        <li><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
+                        <li><a href="#" id="pp" style="color:rgb(0,0,0);">Privacy Policy</a></li>
+                        <li><a href="#" id="tos" style="color:rgb(0,0,0);">Terms of Service</a></li>
+                        <li id="fsafe"><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5 style="color:rgb(0,0,0);">Contact us</h5>
+                    <h5 id="contact" style="color:rgb(0,0,0);">Contact us</h5>
                     <ul>
                         <li><a href="#" style="color:rgb(0,0,0);">Telegram</a></li>
-                        <li><a href="#" style="color:rgb(0,0,0);">Business opportunities</a></li>
+                        <li><a href="#" id="bo" style="color:rgb(0,0,0);">Business opportunities</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5 style="color:rgb(0,0,0);">&nbsp;&nbsp;</h5>
                     <ul>
                         <li><a href="#" style="color:rgb(0,0,0);">中文</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">English</a></li>
                         <li><a href="#" style="color:rgb(0,0,0);">한글</a></li>
                     </ul>
                 </div>
