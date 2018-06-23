@@ -41,7 +41,7 @@
                     <p>Ethereum - Bitcoin</p>
                 </div>
                 <div class="row">
-                    <div class="col col-md-2 offset-md-4">
+                    <div class="col col-md-2 offset-md-4"><input type="hidden" id="market" value="ethbtc">
                         <h3 class="text-center" id="bidtext">Bid</h3>
                         <h1 class="text-center" id="bid" style="color:rgb(0,157,35);">--</h1>
                     </div>
@@ -52,18 +52,20 @@
                 </div>
                 <div class="row" style="padding:4px;margin:0px 0px 15px;">
                     <div class="col">
-                        <h5 class="text-center"><span><em id="spread">Spread: 0.05</em></span></h5>
+                        <h5 class="text-center"><span><em><span id="spreadtext">Spread</span>: <span id="spread">{spread}</span></em>
+                            </span>
+                        </h5>
                     </div>
                 </div>
                 <div class="row" style="margin:33px;">
                     <div class="col offset-md-2 col-md-8" id="trading-panel">
                         <div>
                             <ul class="nav nav-tabs nav-fill">
-                                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1" style="margin:0px;">BUY ETH</a></li>
-                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">SELL ETH</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1" style="margin:0px;">BUY ETH</a></li>
+                                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">SELL ETH</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                <div class="tab-pane" role="tabpanel" id="tab-1">
                                     <div class="col-10 offset-1">
                                         <p>BTC Available:&nbsp;<span>{btc-avail}</span></p>
                                         <div class="input-group" style="margin:0px;padding:9px;">
@@ -74,17 +76,17 @@
                                             <div class="input-group-prepend"><span class="input-group-text">Amount in ETH</span></div><input class="form-control" type="text" id="amount">
                                             <div class="input-group-append"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(59,153,224);">All</button></div>
                                         </div>
-                                        <p>BTC spent: {btc-spent}</p><input type="hidden" id="market" value="ethbtc"><button class="btn btn-primary" type="button" id="submit-buy" style="background-color:rgb(255,255,255);color:rgb(59,153,224);">Submit Order</button></div>
+                                        <p>BTC spent: {btc-spent}</p><button class="btn btn-primary" type="button" id="submit-buy" style="background-color:rgb(255,255,255);color:rgb(59,153,224);">Submit Order</button></div>
                                 </div>
-                                <div class="tab-pane" role="tabpanel" id="tab-2">
+                                <div class="tab-pane active" role="tabpanel" id="tab-2">
                                     <div class="col-10 offset-1">
                                         <p>ETH Available:&nbsp;<span>{btc-avail}</span></p>
                                         <div class="input-group" style="padding:9px;">
-                                            <div class="input-group-prepend"><span class="input-group-text">Price</span></div><input class="form-control" type="text">
+                                            <div class="input-group-prepend"><span class="input-group-text">Price</span></div><input class="form-control" type="text" id="price2">
                                             <div class="input-group-append"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(59,153,224);">Current Price</button></div>
                                         </div>
                                         <div class="input-group" style="padding:9px;">
-                                            <div class="input-group-prepend"><span class="input-group-text">Amount in ETH</span></div><input class="form-control" type="text">
+                                            <div class="input-group-prepend"><span class="input-group-text">Amount in ETH</span></div><input class="form-control" type="text" id="amount2">
                                             <div class="input-group-append"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(59,153,224);">All</button></div>
                                         </div>
                                         <p>ETH spent: {btc-spent}</p><button class="btn btn-primary" type="button" id="submit-sell" style="background-color:rgb(255,255,255);color:rgb(59,153,224);">Submit Order</button></div>
