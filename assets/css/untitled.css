@@ -1,0 +1,75 @@
+.nav.nav-tabs {
+  /*width:100%;*/
+}
+
+#signup-success {
+  display:none;
+}
+
+#login-fail {
+  display:none;
+}
+
+#logout-success {
+  display:none;
+}
+
+#signup-fail {
+  display:none;
+}
+
+.h1, h1 {
+}
+
+#trade {
+  /*display:none;*/
+}
+
+#particles-js {
+  /*height:100%;*/
+  /*padding:0;*/
+  /*margin:0;*/
+  /*overflow:hidden;*/
+}
+
+#particles-js {
+  /*height:100%;*/
+  min-height:682px;
+  height:auto !important;
+  /*min-height:100%;*/
+}
+
+html > body .content {
+  height:auto;
+}
+
+#login-buttons {
+  /*margin:auto;*/
+  position:relative;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  vertical-align:middle;
+}
+
+.particles-js-canvas-el {
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+.clean-block.clean-hero.text {
+  /*z-index:1;*/
+}
+
+#trade {
+  display:none;
+}
+
+#tradeing {
+  display:none;
+}
+
+.tradeing {
+  display:none;
+}
+

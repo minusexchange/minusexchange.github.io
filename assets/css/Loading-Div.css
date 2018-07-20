@@ -1,0 +1,26 @@
+.loadingdiv {
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:100;
+}
+
+.loadingdivimg {
+  width:100px;
+  height:100px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-50px;
+  margin-top:-50px;
+}
+
+#bigbox {
+  min-height:682px;
+  height:auto;
+}
+
+.bigbox {
+  min-height:682px;
+}
+
