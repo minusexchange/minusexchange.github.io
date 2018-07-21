@@ -14,142 +14,147 @@
 </head>
 
 <body>
-<div id="loading"></div>
-<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-    <div class="container"><a class="navbar-brand logo" href="index.html">Minus Exchange</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
-                class="navbar-toggler-icon"></span></button>
-        <div
+    <div id="loading"></div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="index.html">Minus Exchange</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
                 class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="markets/ETHBTC.html">markets</a></li>
-                <li class="nav-item" role="presentation" id="assets-nav"><a class="nav-link active" href="assets.html"
-                                                                            id="assets-nav">assets</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="settings.html" id="settings-nav">settings</a>
-                </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="login-logout">{login/logout}</a>
-                </li>
-            </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="markets/ETHBTC.html">markets</a></li>
+                    <li class="nav-item" role="presentation" id="assets-nav"><a class="nav-link active" href="assets.html" id="assets-nav">assets</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="settings.html" id="settings-nav">settings</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="login-logout">{login/logout}</a></li>
+                </ul>
         </div>
-    </div>
-</nav>
-<main class="page">
-    <section class="clean-block features">
+        </div>
+    </nav>
+    <main class="page">
         <div class="container">
-            <div class="block-heading" style="padding:50px 0 0;color:rgb(59,153,224);">
-                <h1 class="text-left"><span id="howdy">Howdy</span>,&nbsp;<span id="user-name">{name}</span></h1>
-                <div class="row" style="margin:-0;padding:10px;">
-                    <div class="col">
-                        <h2 id="NPV-heading">NPV</h2>
-                        <h1>{amount}</h1>
+            <div class="row">
+                <div class="col">
+                    <h4><small class="text-muted">Howdy,&nbsp;</small><span id="user-name">{name}</span></h4>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <div class="card border-success bg-light">
+                        <div class="card-body text-success">
+                            <h4 class="card-title">{amount}</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Your NPV</h6><a class="card-link" href="#">Contact Support</a></div>
                     </div>
                 </div>
-                <div class="row" style="padding:15px;">
-                    <div class="col">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th id="currencyt">Currency</th>
-                                    <th id="amountt">Amount</th>
-                                    <th id="actiont">Action</th>
-                                </tr>
-                                </thead>
-                                <tbody id="assets-table"></tbody>
-                            </table>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Pairing</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Updated realtime</h6>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th id="currencyt">Currency</th>
+                                            <th id="amountt">Amount</th>
+                                            <th id="actiont">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="assets-table"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h2 class="text-info"></h2>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="card bg-dark">
+                        <div class="card-body text-white">
+                            <h4 class="card-title">Chart</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Launching soon</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-</main>
-<footer class="page-footer dark" style="color:rgb(48,68,88);background-color:rgb(255,255,255);">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3" style="color:rgb(0,0,0);">
-                <h5 id="gstarted" style="color:rgb(0,0,0);">Getting Started</h5>
-                <ul>
-                    <li id="uguide">User Guide</li>
-                    <li>API<a href="#" style="color:rgb(0,0,0);"></a></li>
-                    <li id="tariff">Tariff</li>
-                </ul>
-                <ul></ul>
+    </main>
+    <footer class="page-footer dark" style="color:rgb(48,68,88);background-color:rgb(255,255,255);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" style="color:rgb(0,0,0);">
+                    <h5 id="gstarted" style="color:rgb(0,0,0);">Getting Started</h5>
+                    <ul>
+                        <li id="uguide">User Guide</li>
+                        <li>API<a href="#" style="color:rgb(0,0,0);"></a></li>
+                        <li id="tariff">Tariff</li>
+                    </ul>
+                    <ul></ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5 id="legal" style="color:rgb(0,0,0);">Legal</h5>
+                    <ul>
+                        <li><a href="#" id="pp" style="color:rgb(0,0,0);">Privacy Policy</a></li>
+                        <li><a href="#" id="tos" style="color:rgb(0,0,0);">Terms of Service</a></li>
+                        <li id="fsafe"><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5 id="contact" style="color:rgb(0,0,0);">Contact us</h5>
+                    <ul>
+                        <li><a href="#" style="color:rgb(0,0,0);">Telegram</a></li>
+                        <li><a href="#" id="bo" style="color:rgb(0,0,0);">Business opportunities</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5 style="color:rgb(0,0,0);">&nbsp;&nbsp;</h5>
+                    <ul>
+                        <li><a href="#" style="color:rgb(0,0,0);">中文</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">English</a></li>
+                        <li><a href="#" style="color:rgb(0,0,0);">한글</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <h5 id="legal" style="color:rgb(0,0,0);">Legal</h5>
-                <ul>
-                    <li><a href="#" id="pp" style="color:rgb(0,0,0);">Privacy Policy</a></li>
-                    <li><a href="#" id="tos" style="color:rgb(0,0,0);">Terms of Service</a></li>
-                    <li id="fsafe"><a href="#" style="color:rgb(0,0,0);">Fund Safety</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5 id="contact" style="color:rgb(0,0,0);">Contact us</h5>
-                <ul>
-                    <li><a href="#" style="color:rgb(0,0,0);">Telegram</a></li>
-                    <li><a href="#" id="bo" style="color:rgb(0,0,0);">Business opportunities</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5 style="color:rgb(0,0,0);">&nbsp;&nbsp;</h5>
-                <ul>
-                    <li><a href="#" style="color:rgb(0,0,0);">中文</a></li>
-                    <li><a href="#" style="color:rgb(0,0,0);">English</a></li>
-                    <li><a href="#" style="color:rgb(0,0,0);">한글</a></li>
-                </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Minus Exchange</p>
+        </div>
+    </footer>
+    <div class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Title</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p>The content of your modal.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
-        <p>© 2018 Minus Exchange</p>
-    </div>
-</footer>
-<div class="modal fade" role="dialog" tabindex="-1">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Modal Title</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">×</span></button>
-            </div>
-            <div class="modal-body">
-                <p>The content of your modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
-                <button class="btn btn-primary" type="button">Save</button>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/server.js"></script>
-<script src="assets/js/js.cookies.js"></script>
-<script src="assets/js/particles.min.js"></script>
-<script src="assets/js/loginstatus.js"></script>
-<script src="assets/js/qrcode.js"></script>
-<script src="assets/js/login.js"></script>
-<script src="assets/js/readAssets.js"></script>
-<script src="assets/js/setUserArrt.js"></script>
-<script src="assets/js/signup.js"></script>
-<script src="assets/js/btcdeposit.js"></script>
-<script src="assets/js/ethdeposit.js"></script>
-<script src="assets/js/particles.js"></script>
-<script src="assets/js/language.js"></script>
-<script src="assets/js/loadmyorder.js"></script>
-<script src="assets/js/myorders.js"></script>
-<script src="assets/js/tradeethbtc.js"></script>
-<script src="assets/js/bidask.js"></script>
-<script src="assets/js/ping.js"></script>
-<script src="assets/js/Chart.bundle.js"></script>
-<script src="assets/js/getavailspent.js"></script>
-<script src="assets/js/homepage_marquee.js"></script>
-<script src="assets/js/orderbook.js"></script>
-<script src="assets/js/theme.js"></script>
-<script src="assets/js/untitled.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/server.js"></script>
+    <script src="assets/js/js.cookies.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/loginstatus.js"></script>
+    <script src="assets/js/qrcode.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/readAssets.js"></script>
+    <script src="assets/js/setUserArrt.js"></script>
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/btcdeposit.js"></script>
+    <script src="assets/js/ethdeposit.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/loadmyorder.js"></script>
+    <script src="assets/js/myorders.js"></script>
+    <script src="assets/js/tradeethbtc.js"></script>
+    <script src="assets/js/bidask.js"></script>
+    <script src="assets/js/ping.js"></script>
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/getavailspent.js"></script>
+    <script src="assets/js/homepage_marquee.js"></script>
+    <script src="assets/js/orderbook.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/untitled.js"></script>
 </body>
 
 </html>
