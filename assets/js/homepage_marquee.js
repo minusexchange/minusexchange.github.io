@@ -1,5 +1,5 @@
 var feed="";
-$.get("https://minusexchange.com/feed/", function (data) {
+$.get("https://feeds.feedburner.com/CoinDesk", function (data) {
     $(data).find("item").each(function () { // or "item" or whatever suits your feed
         var el = $(this);
 
@@ -14,5 +14,5 @@ $.get("https://minusexchange.com/feed/", function (data) {
     $("#news").attr("data-marquee",feed);
 });
 $( "#news" ).click(function() {
-  window.location.href="https://minusexchange.com";
+  window.location.href="https://coindesk.com";
 });
