@@ -1,2 +1,2 @@
 # minusexchange.github.io
-minus exchange GUI
+a school project on designing a website
